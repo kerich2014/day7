@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Day7</title>
 </head>
 <body>
@@ -15,10 +15,12 @@
         <div class="inputContainer">
             <p>Введите название напоминания:</p>
             <input class="inputText"/>
-            <button class="createButton">Создать</button>
+            <button class="createButton" onclick="addDeal()">Создать</button>
         </div>
-        <div class="todoContainer">
-            
+        <div class="todoContainer" id="todoContainer">
+            <div class="todo"></div>
+            <div class="todo"></div>
+            <div class="todo"></div>
         </div>
     </main>
 </body>
